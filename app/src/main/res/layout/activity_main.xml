@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:name="com.example.netflixfortv.MainFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/five_cadr">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="end|center">
+
+                <TextView
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Сергей Владимирович"/>
+                  <ImageView
+                      android:layout_marginEnd="20dp"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:src="@drawable/profile" />
+
+
+
+            </LinearLayout>
+
+
+                <ImageView
+                    android:layout_marginStart="50dp"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/money_heist_text"
+                    />
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="onLookClick"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Смотреть"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Для вас"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/the_magicians_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="The Magicians"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/got_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Game Of Thrones"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/lucifer_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Lucifer"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/sex_education_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Sex Education"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/money_heist_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Money Heist"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/altered_carbon_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Altered Carbon"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/kong"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Godzilla vs. Kong"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/no_one"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="No one"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Новинки"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"/>
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/the_magicians_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="The Magicians"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/got_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Game Of Thrones"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/lucifer_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Lucifer"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/sex_education_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Sex Education"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/money_heist_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Money Heist"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/altered_carbon_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Altered Carbon"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/kong"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Godzilla vs. Kong"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/no_one"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="No one"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="В тренде"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/the_magicians_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="The Magicians"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/got_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Game Of Thrones"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/lucifer_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Lucifer"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/sex_education_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Sex Education"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/money_heist_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Money Heist"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/altered_carbon_afisha"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Altered Carbon"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/kong"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Godzilla vs. Kong"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/no_one"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="No one"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

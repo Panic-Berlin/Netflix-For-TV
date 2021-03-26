@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieScreen"
+    android:background="@drawable/money_heist">
+   <ScrollView
+       android:scrollbars="none"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginTop="50dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/layout_background">
+           <LinearLayout
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:padding="5dp"
+                   android:layout_width="200dp"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/money_heist_afisha"/>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:text="Money Heist"
+                       android:textStyle="bold"
+                       android:textSize="28sp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginStart="10dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/description"
+                       android:textColor="@color/grey"
+                       android:textSize="18sp"
+                       android:layout_marginTop="10dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/grey"
+                       android:text="2015г."
+                       android:layout_marginTop="25dp"
+                       android:textSize="18sp"
+                       />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="Кадры из фильма"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"/>
+
+           <HorizontalScrollView
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="130dp">
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:layout_marginStart="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="220dp"
+                       android:layout_height="120dp"
+                       android:src="@drawable/second_cadr"/>
+                   <ImageView
+                       android:layout_marginStart="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="220dp"
+                       android:layout_height="120dp"
+                       android:src="@drawable/five_cadr"/>
+                   <ImageView
+                       android:layout_marginStart="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="220dp"
+                       android:layout_height="120dp"
+                       android:src="@drawable/first_cadr"/>
+                   <ImageView
+                       android:layout_marginStart="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="220dp"
+                       android:layout_height="120dp"
+                       android:src="@drawable/tree_cadr"/>
+                   <ImageView
+                       android:layout_marginStart="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="220dp"
+                       android:layout_height="120dp"
+                       android:src="@drawable/four_cadr"
+                       android:layout_marginEnd="20dp"/>
+
+               </LinearLayout>
+           </HorizontalScrollView>
+
+           <TextView
+               android:layout_marginTop="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:textSize="28sp"
+               android:textStyle="bold"
+               android:text="Смотреть"
+               android:layout_marginStart="15dp"/>
+
+           <LinearLayout
+               android:background="@drawable/tree_cadr"
+               android:layout_marginTop="20dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="900dp"
+               android:layout_height="500dp"
+               android:gravity="center">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/play_red"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_marginTop="25dp"
+               android:layout_marginStart="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Эпизоды"
+               android:textStyle="bold"
+               android:textSize="28sp"
+               android:textColor="@color/white"/>
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="150dp">
+
+               <ImageView
+                   android:layout_marginStart="15dp"
+                   android:layout_width="250dp"
+                   android:layout_height="150dp"
+                   android:src="@drawable/first_cadr"/>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:textSize="24sp"
+                       android:textStyle="bold"
+                       android:text="Эпизод первый"
+                       android:layout_marginStart="20dp"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/description"
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="2015г."
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="150dp">
+
+               <ImageView
+                   android:layout_marginStart="15dp"
+                   android:layout_width="250dp"
+                   android:layout_height="150dp"
+                   android:src="@drawable/second_cadr"/>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:textSize="24sp"
+                       android:textStyle="bold"
+                       android:text="Эпизод второй"
+                       android:layout_marginStart="20dp"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/description"
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="2015г."
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_marginBottom="80dp">
+
+               <ImageView
+                   android:layout_marginStart="15dp"
+                   android:layout_width="250dp"
+                   android:layout_height="150dp"
+                   android:src="@drawable/tree_cadr"/>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:textSize="24sp"
+                       android:textStyle="bold"
+                       android:text="Эпизод третий"
+                       android:layout_marginStart="20dp"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/description"
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+                   <TextView
+                       android:layout_marginStart="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="2015г."
+                       android:textSize="18sp"
+                       android:textColor="@color/grey"/>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+</LinearLayout>
